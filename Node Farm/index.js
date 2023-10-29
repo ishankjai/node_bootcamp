@@ -67,7 +67,7 @@ let server = http.createServer((req, res) => {
       .join("");
 
     const output = tempOverview.replace(/{%PRODUCT_CARDS%}/g, cardHtml);
-    // console.log(cardHtml);
+    console.log(cardHtml);
     res.end(output);
   }
   //   Product
